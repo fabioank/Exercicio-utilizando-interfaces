@@ -2,8 +2,6 @@ package entities;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
-
 public class Installment {
 
     private LocalDate dueDate;
@@ -17,10 +15,12 @@ public class Installment {
     }
 
     public LocalDate getDueDate() {
+
         return dueDate;
     }
 
     public void setDueDate(LocalDate dueDate) {
+
         this.dueDate = dueDate;
     }
 
@@ -33,7 +33,6 @@ public class Installment {
     }
     @Override
     public String toString() {
-        return dueDate.format(fmt)+
-                " - " + amount;
+        return dueDate.format(fmt)+ " - " + amount;
     }
 }
