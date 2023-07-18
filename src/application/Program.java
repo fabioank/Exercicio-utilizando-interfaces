@@ -32,7 +32,7 @@ public class Program {
 
         System.out.println("Parcelas: ");
         for(Installment i: contract.getInstallments()){
-            System.out.println(i.toString());
+            System.out.println(i);
         }
     }
 }
